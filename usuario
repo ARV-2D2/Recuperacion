@@ -1,0 +1,36 @@
+class user():
+    def __init__(self,first_name,last_name,pasword,mail):
+        self.first_name=first_name
+        self.last_name=last_name
+        self.pasword=pasword
+        self.mail=mail
+        self.user_attempt = 0
+        self.reset=0
+    def describe_user(self):
+        print('\nNombre: '+self.first_name)
+        print('\nApellido: '+self.last_name)
+        print('\nContraseña: '+self.pasword)
+        print('\nCorreo: '+self.mail)
+    def greet_user(self):
+        print('Hola, '+self.first_name+', Bienvenido.')
+    def increment_login_attempts(self,us):
+        if us <= 4:
+            self.user_attempt = us
+        else: print("Has intentado acceder fallidamente demasiadas veces")
+    def reset_loging_attempts(self):
+        self.reset=user_attempt
+    def read_number(sefl):
+        print("se han intentado iniciar sesion "+str(sefl.user_attempt)+ " veces.")
+my_user=user('Diego','Arvizu','Contraseña123','diegoarvizuf@gmail.com')
+print(my_user.greet_user())
+print(my_user.describe_user())
+my_user.increment_login_attempts(1)
+my_user.read_number()
+my_user.increment_login_attempts(2)
+my_user.read_number()
+my_user.increment_login_attempts(3)
+my_user.read_number()
+my_user.increment_login_attempts(4)
+my_user.read_number()
+my_user.increment_login_attempts(5)
+my_user.read_number()
