@@ -1,0 +1,8 @@
+def display_message(temaA,temaB,temaC):
+        print("Hasta ahora se han visto los temas:"+temaA.title()+temaB.title()+temaC.title())
+display_message('Clases',',Funciones',' Argumentos')
+
+
+def libro_fav(libro):
+    print("Tu libro favorito es "+libro.title())
+libro_fav("Un mundo feliz")
