@@ -1,0 +1,4 @@
+def hacerPlayera(size,txt_playera):
+    print("\nEl tamaño de su playera es "+ size +".")
+    print("\El texto serigrafiado en ella es "+ txt_playera + ".")
+hacerPlayera("grande","'Hola Amigos'")
